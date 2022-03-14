@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Menu">
+      <UniqueIdentifier>{2efd2022-3aa5-4a11-b070-35478c804fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ImGui">
+      <UniqueIdentifier>{2d516ffd-f85a-4e4d-b39a-6fe8e98b2d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Offsets">
+      <UniqueIdentifier>{81042b78-0fd2-4b23-9eb0-9f7ae0dc6bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Settings">
+      <UniqueIdentifier>{c637021e-4656-4549-b5b4-d860713c17c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Croe">
+      <UniqueIdentifier>{83b18d31-b28c-47c9-8590-bfda69f39754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SDK">
+      <UniqueIdentifier>{cb02f7e8-9e7d-4ac1-8373-0cb48e96912a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{8c148445-76dd-424d-b9d6-e513ae63467f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core.cpp">
+      <Filter>源文件\Croe</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Menu.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Offsets.cpp">
+      <Filter>源文件\Offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Settings.cpp">
+      <Filter>源文件\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\iltbaseclass.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\lterror.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\LTEulerAngles.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\ltmodule.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\ltobjref.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\inc\ltquatbase.cpp">
+      <Filter>头文件\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Utils.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Core.h">
+      <Filter>源文件\Croe</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Offsets.h">
+      <Filter>源文件\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Settings.h">
+      <Filter>源文件\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\SDK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\AutoMessage.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\clientheaders.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cui.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuibase.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuibutton.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuicheck.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuidropdownlist.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuifont.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuiformattedpolystring.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuiinterval.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuilist.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuimessage.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuioption.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuipolystring.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuiprogress.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuislider.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuistaticimage.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuistatictext.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuitypes.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuiwidget.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\cuiwindow.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iaggregate.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iclientshell.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltbaseclass.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltbenchmark.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltclient.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltcommon.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltcsbase.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltcursor.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltdirectmusic.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltdrawprim.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltesd.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltfontmanager.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltinfo.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltmath.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltmemory.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltmessage.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltmodel.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltphysics.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltpreinterface.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltrefcount.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltremovablestoragemgr.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltrendermgr.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltrenderstyles.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltserver.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltsoundmgr.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltspritecontrol.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltstream.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ilttexinterface.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ilttexturestring.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ilttransform.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltvideomgr.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iltwidgetmanager.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iobjectplugin.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\iservershell.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\libltdiagnostics.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\libltinfo.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\libltphysics.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\lithtech.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltanimtracker.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltassert.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltbasedefs.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltbasetypes.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltbeziercurve.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltcodes.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltcrashhandler.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltdistrchatdefs.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltengineobjects.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\lterror.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\LTEulerAngles.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\LTFontParams.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltgraphicscaps.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltinteger.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltlink.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltmatrix.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltmem.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltmodule.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltobjectcreate.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltobjref.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltplane.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltproperty.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltpvalue.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltquatbase.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltrect.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltrendererstats.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltrenderstyle.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltrotation.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltserverobj.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltsysoptim.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\ltvector.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\memblockallocator.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\MsgIDs.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\server_interface.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\serverheaders.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\tdguard.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\SFXMsgIds.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\DamageTypesEnum.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Utils.h">
+      <Filter>源文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HookLib\MinHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>源文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\xorstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Menu.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>

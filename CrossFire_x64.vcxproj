@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2d046631-4019-41f6-8cc9-cafccd1bf970}</ProjectGuid>
+    <RootNamespace>CrossFirePH</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>CrossFire_x64</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\sdk\inc;.\Code;.\HookLib;.\imgui;E:\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\HookLib;E:\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>.\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CROSSFIREPH_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CROSSFIREPH_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CROSSFIREPH_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CROSSFIREPH_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4099;4333;4244;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Core.cpp" />
+    <ClCompile Include="Code\Menu.cpp" />
+    <ClCompile Include="Code\Offsets.cpp" />
+    <ClCompile Include="Code\Settings.cpp" />
+    <ClCompile Include="Code\Utils.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="sdk\inc\iltbaseclass.cpp" />
+    <ClCompile Include="sdk\inc\lterror.cpp" />
+    <ClCompile Include="sdk\inc\LTEulerAngles.cpp" />
+    <ClCompile Include="sdk\inc\ltmodule.cpp" />
+    <ClCompile Include="sdk\inc\ltobjref.cpp" />
+    <ClCompile Include="sdk\inc\ltquatbase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Core.h" />
+    <ClInclude Include="Code\Menu.h" />
+    <ClInclude Include="Code\Offsets.h" />
+    <ClInclude Include="Code\Settings.h" />
+    <ClInclude Include="Code\stdafx.h" />
+    <ClInclude Include="Code\SDK.h" />
+    <ClInclude Include="Code\Utils.h" />
+    <ClInclude Include="Code\xorstr.h" />
+    <ClInclude Include="HookLib\MinHook.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="sdk\inc\AutoMessage.h" />
+    <ClInclude Include="sdk\inc\clientheaders.h" />
+    <ClInclude Include="sdk\inc\cui.h" />
+    <ClInclude Include="sdk\inc\cuibase.h" />
+    <ClInclude Include="sdk\inc\cuibutton.h" />
+    <ClInclude Include="sdk\inc\cuicheck.h" />
+    <ClInclude Include="sdk\inc\cuidropdownlist.h" />
+    <ClInclude Include="sdk\inc\cuifont.h" />
+    <ClInclude Include="sdk\inc\cuiformattedpolystring.h" />
+    <ClInclude Include="sdk\inc\cuiinterval.h" />
+    <ClInclude Include="sdk\inc\cuilist.h" />
+    <ClInclude Include="sdk\inc\cuimessage.h" />
+    <ClInclude Include="sdk\inc\cuioption.h" />
+    <ClInclude Include="sdk\inc\cuipolystring.h" />
+    <ClInclude Include="sdk\inc\cuiprogress.h" />
+    <ClInclude Include="sdk\inc\cuislider.h" />
+    <ClInclude Include="sdk\inc\cuistaticimage.h" />
+    <ClInclude Include="sdk\inc\cuistatictext.h" />
+    <ClInclude Include="sdk\inc\cuitypes.h" />
+    <ClInclude Include="sdk\inc\cuiwidget.h" />
+    <ClInclude Include="sdk\inc\cuiwindow.h" />
+    <ClInclude Include="sdk\inc\DamageTypesEnum.h" />
+    <ClInclude Include="sdk\inc\iaggregate.h" />
+    <ClInclude Include="sdk\inc\iclientshell.h" />
+    <ClInclude Include="sdk\inc\iltbaseclass.h" />
+    <ClInclude Include="sdk\inc\iltbenchmark.h" />
+    <ClInclude Include="sdk\inc\iltclient.h" />
+    <ClInclude Include="sdk\inc\iltcommon.h" />
+    <ClInclude Include="sdk\inc\iltcsbase.h" />
+    <ClInclude Include="sdk\inc\iltcursor.h" />
+    <ClInclude Include="sdk\inc\iltdirectmusic.h" />
+    <ClInclude Include="sdk\inc\iltdrawprim.h" />
+    <ClInclude Include="sdk\inc\iltesd.h" />
+    <ClInclude Include="sdk\inc\iltfontmanager.h" />
+    <ClInclude Include="sdk\inc\iltinfo.h" />
+    <ClInclude Include="sdk\inc\iltmath.h" />
+    <ClInclude Include="sdk\inc\iltmemory.h" />
+    <ClInclude Include="sdk\inc\iltmessage.h" />
+    <ClInclude Include="sdk\inc\iltmodel.h" />
+    <ClInclude Include="sdk\inc\iltphysics.h" />
+    <ClInclude Include="sdk\inc\iltpreinterface.h" />
+    <ClInclude Include="sdk\inc\iltrefcount.h" />
+    <ClInclude Include="sdk\inc\iltremovablestoragemgr.h" />
+    <ClInclude Include="sdk\inc\iltrendermgr.h" />
+    <ClInclude Include="sdk\inc\iltrenderstyles.h" />
+    <ClInclude Include="sdk\inc\iltserver.h" />
+    <ClInclude Include="sdk\inc\iltsoundmgr.h" />
+    <ClInclude Include="sdk\inc\iltspritecontrol.h" />
+    <ClInclude Include="sdk\inc\iltstream.h" />
+    <ClInclude Include="sdk\inc\ilttexinterface.h" />
+    <ClInclude Include="sdk\inc\ilttexturestring.h" />
+    <ClInclude Include="sdk\inc\ilttransform.h" />
+    <ClInclude Include="sdk\inc\iltvideomgr.h" />
+    <ClInclude Include="sdk\inc\iltwidgetmanager.h" />
+    <ClInclude Include="sdk\inc\iobjectplugin.h" />
+    <ClInclude Include="sdk\inc\iservershell.h" />
+    <ClInclude Include="sdk\inc\libltdiagnostics.h" />
+    <ClInclude Include="sdk\inc\libltinfo.h" />
+    <ClInclude Include="sdk\inc\libltphysics.h" />
+    <ClInclude Include="sdk\inc\lithtech.h" />
+    <ClInclude Include="sdk\inc\ltanimtracker.h" />
+    <ClInclude Include="sdk\inc\ltassert.h" />
+    <ClInclude Include="sdk\inc\ltbasedefs.h" />
+    <ClInclude Include="sdk\inc\ltbasetypes.h" />
+    <ClInclude Include="sdk\inc\ltbeziercurve.h" />
+    <ClInclude Include="sdk\inc\ltcodes.h" />
+    <ClInclude Include="sdk\inc\ltcrashhandler.h" />
+    <ClInclude Include="sdk\inc\ltdistrchatdefs.h" />
+    <ClInclude Include="sdk\inc\ltengineobjects.h" />
+    <ClInclude Include="sdk\inc\lterror.h" />
+    <ClInclude Include="sdk\inc\LTEulerAngles.h" />
+    <ClInclude Include="sdk\inc\LTFontParams.h" />
+    <ClInclude Include="sdk\inc\ltgraphicscaps.h" />
+    <ClInclude Include="sdk\inc\ltinteger.h" />
+    <ClInclude Include="sdk\inc\ltlink.h" />
+    <ClInclude Include="sdk\inc\ltmatrix.h" />
+    <ClInclude Include="sdk\inc\ltmem.h" />
+    <ClInclude Include="sdk\inc\ltmodule.h" />
+    <ClInclude Include="sdk\inc\ltobjectcreate.h" />
+    <ClInclude Include="sdk\inc\ltobjref.h" />
+    <ClInclude Include="sdk\inc\ltplane.h" />
+    <ClInclude Include="sdk\inc\ltproperty.h" />
+    <ClInclude Include="sdk\inc\ltpvalue.h" />
+    <ClInclude Include="sdk\inc\ltquatbase.h" />
+    <ClInclude Include="sdk\inc\ltrect.h" />
+    <ClInclude Include="sdk\inc\ltrendererstats.h" />
+    <ClInclude Include="sdk\inc\ltrenderstyle.h" />
+    <ClInclude Include="sdk\inc\ltrotation.h" />
+    <ClInclude Include="sdk\inc\ltserverobj.h" />
+    <ClInclude Include="sdk\inc\ltsysoptim.h" />
+    <ClInclude Include="sdk\inc\ltvector.h" />
+    <ClInclude Include="sdk\inc\memblockallocator.h" />
+    <ClInclude Include="sdk\inc\MsgIDs.h" />
+    <ClInclude Include="sdk\inc\serverheaders.h" />
+    <ClInclude Include="sdk\inc\server_interface.h" />
+    <ClInclude Include="sdk\inc\SFXMsgIds.h" />
+    <ClInclude Include="sdk\inc\tdguard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
